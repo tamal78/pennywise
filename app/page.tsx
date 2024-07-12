@@ -9,7 +9,7 @@ import { ThemeSwitcherBtn } from '@/components/ThemeSwitcherBtn';
 
 export default function Page() {
   return (
-    <div className='flex flex-col lg:flex-row lg:justify-between px-4 lg:px-20 overflow-hidden'>
+    <div className='w-full'>
       <Navbar />
       <LandinngPage />
     </div>
