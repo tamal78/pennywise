@@ -107,7 +107,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
         ) : (
           <Button
             variant={'ghost'}
-            className='flex border-separate items-center justify-start roudned-none border-b px-3 py-3 text-muted-foreground'
+            className='flex border-separate items-center justify-start rounded-none border-b px-3 py-3 text-muted-foreground'
           >
             <PlusSquare className='mr-2 h-4 w-4' />
             Create new
@@ -182,7 +182,7 @@ function CreateCategoryDialog({ type, successCallback, trigger }: Props) {
                           )}
                         </Button>
                       </PopoverTrigger>
-                      <PopoverContent className='w-full'>
+                      <PopoverContent className='w-full max-h-[300px] overflow-y-auto'>
                         <Picker
                           data={data}
                           theme={theme.resolvedTheme}

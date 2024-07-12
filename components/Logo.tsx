@@ -25,9 +25,9 @@ export function LogoMobile() {
   return (
     <Link
       href={isAuthenticated ? '/dashboard' : '/'}
-      className='flex items-center gap-2'
+      className='flex items-center'
     >
-      <PiggyBank className='stroke h-11 w-11 stroke-blue-500 stroke-[1.5]' />
+      <PiggyBank className='stroke h-11 w-11 stroke-amber-500 stroke-[1.5]' />
     </Link>
   );
 }

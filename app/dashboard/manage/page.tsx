@@ -68,7 +68,7 @@ function CategoryList({ type }: { type: TransactionType }) {
     <SkeletonWrapper isLoading={categoriesQuery.isLoading}>
       <Card>
         <CardHeader>
-          <CardTitle className='flex items-center justify-between gap-2'>
+          <CardTitle className='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2'>
             <div className='flex items-center gap-2'>
               {type === 'expense' ? (
                 <TrendingDown className='h-12 w-12 items-center rounded-lg bg-red-400/10 p-2 text-red-500' />
@@ -87,7 +87,7 @@ function CategoryList({ type }: { type: TransactionType }) {
               type={type}
               successCallback={() => categoriesQuery.refetch()}
               trigger={
-                <Button className='gap-2 text-sm'>
+                <Button className='gap-2 text-sm flex-shrink-0'>
                   <PlusSquare className='h-4 w-4' />
                   Create category
                 </Button>
